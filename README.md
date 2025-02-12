@@ -35,6 +35,7 @@
     body {
         font-family: 'Helvetica', 'Arial', sans-serif;
     }
+    font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 
     /* يمكن استخدام خط Roboto في عناصر معينة */
     .specific-element {
