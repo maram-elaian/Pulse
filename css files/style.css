@@ -1,2 +1,60 @@
-body{
-    font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;}
+body {
+    font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #fcfcfc;
+    font-weight: 500;
+}
+
+
+
+header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+header .logo {
+    width: 20%;
+
+
+}
+
+header .menu {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    font-weight: bold;
+
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    color: #00ad6a;
+    text-decoration: none;
+
+
+}
+
+.menu a:hover {
+    color: #080c16;
+    transition: 0.4s;
+}
+
+.btn {
+    color: #00ad6a;
+    background-color: none;
+    border: #00ad6a solid 2px;
+    padding: 1% 2%;
+}
+
+.btn:hover {
+    color: #00ad6a;
+    box-shadow: -5px 5px #00ad6a;
+    -webkit-transform: translate3d(5px, -5px, 0);
+    transform: translate3d(5px, -5px, 0)
+}
