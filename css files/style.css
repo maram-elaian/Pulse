@@ -4,7 +4,9 @@ body {
     font-weight: 500;
 }
 
-
+i{
+    color: #00ad6a;
+}
 
 header {
     width: 100%;
@@ -57,4 +59,170 @@ header .menu {
     box-shadow: -5px 5px #00ad6a;
     -webkit-transform: translate3d(5px, -5px, 0);
     transform: translate3d(5px, -5px, 0)
+}
+.cardbtn{
+   color: #080c16;
+    background-color: #00ad6a;
+    border: #00ad6a solid 2px;
+text-decoration: none;
+    padding: 2% 5%; 
+}
+.intro{
+   
+  width: 100%;  
+  max-height: 50vh;
+  text-align: center;
+  margin-top: 2%;
+}
+.info{
+   
+    width: 50%;  
+    margin: auto;
+}
+.cards{
+   
+    width:90%;   
+    margin: auto;
+    margin-top: 1%;
+    max-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+
+}
+.card1{
+ width: 30%;   
+ margin-top: 5%;
+ text-align: center ;
+ max-height: 80vh;
+}
+.card1 h3{
+    color: #00ad6a;
+    width: 70%;
+    text-align: center;
+    margin: auto;  
+}
+.card3{
+    width: 30%;   
+    margin-top: 5%;
+    text-align: center ;
+    border: #eafaf1 1px solid;
+    max-height: 90vh;
+   }
+   .card3 h3{
+       color: #00ad6a;
+       width: 70%;
+       text-align: center;
+       margin: auto;  
+   }
+.box{
+    background-color: #eafaf1;
+    padding: 2%;
+    margin-bottom: 5%;
+    
+}
+.box a{
+text-decoration: none;
+color: #080c16;    
+}
+ul{
+    list-style-type: none;
+}
+ ul li{
+ 
+   margin: 1rem;
+}
+.cardmid h1{
+    color: #00ad6a;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.cardmid{
+    width: 30%;  
+    border: 1px solid #00ad6a;
+    max-height: 110vh;
+    text-align: center;
+    
+}
+.rec{
+    background-color: #00ad6a;
+    max-height: 10vh;
+    text-align: center;
+    color: #fcfcfc;
+    border-radius: 5px;
+}
+.sub{
+   
+    width: 60%;
+    margin: auto; 
+    margin-top: 5%; 
+  text-align: center;
+    justify-content: center; 
+    align-items: center;
+}
+ .icon{
+   
+   width: 30%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.icon img{
+    width: 40%;
+}
+.g{
+    color: #00ad6a;
+    font-weight: bold;
+}
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 2rem; /* Space below the header */
+    }
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; /* Space between cards */
+    }
+
+    .card1, .card3, .cardmid {
+        width: 90%;
+        margin-bottom: 2rem; /* Space below each card */
+    }
+
+    .info {
+        margin-top: 2rem; /* Space above the info section */
+    }
+    
+    .sub {
+        margin-top: 2rem; /* Space above the sub section */
+    }
+}
+
+
+@media (max-width: 480px) {
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn, .cardbtn {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .rec {
+        padding: 1rem;
+    }
+    
+    .icon img {
+        width: 50%;
+    }
 }
