@@ -4,7 +4,7 @@ body {
     font-weight: 500;
 }
 
-i{
+i {
     color: #00ad6a;
 }
 
@@ -47,6 +47,95 @@ header .menu {
     transition: 0.4s;
 }
 
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+/* القائمة الجانبية (sidebar) */
+/* إعدادات أساسية */
+body {
+    font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #fcfcfc;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+}
+
+
+
+/* إعداد القائمة الجانبية */
+.sidebar {
+    display: none; /* مخفية بشكل افتراضي */
+    
+    top: 0;
+    left: 0;
+  width:80%;
+    height: 100vh;
+    background-color: #eafaf1;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+
+
+.sidebar li {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.sidebar a {
+    color: #00ad6a;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #00ad6a;
+    color: #fff;
+}
+.sidebar.active {
+    display: flex;
+}
+
+
+/* الزر ☰ */
+.menu-button {
+    display: none; /* إخفاء الزر افتراضيًا */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #00ad6a;
+    cursor: pointer;
+}
+
+/* إظهار الزر فقط على الشاشات الصغيرة */
+@media (max-width: 800px) {
+   
+    .menu-button {
+        display: block; /* إظهار الزر على الشاشات الصغيرة */
+    }
+
+    /* إخفاء القائمة الرئيسية على الشاشات الصغيرة */
+    .main-menu {
+        display: none;
+    }
+}
+
+
+
+
+
+
 .btn {
     color: #00ad6a;
     background-color: none;
@@ -60,28 +149,32 @@ header .menu {
     -webkit-transform: translate3d(5px, -5px, 0);
     transform: translate3d(5px, -5px, 0)
 }
-.cardbtn{
-   color: #080c16;
+
+.cardbtn {
+    color: #080c16;
     background-color: #00ad6a;
     border: #00ad6a solid 2px;
-text-decoration: none;
-    padding: 2% 5%; 
+    text-decoration: none;
+    padding: 2% 5%;
 }
-.intro{
-   
-  width: 100%;  
-  max-height: 50vh;
-  text-align: center;
-  margin-top: 2%;
+
+.intro {
+
+    width: 100%;
+    max-height: 50vh;
+    text-align: center;
+    margin-top: 2%;
 }
-.info{
-   
-    width: 50%;  
+
+.info {
+
+    width: 50%;
     margin: auto;
 }
-.cards{
-   
-    width:90%;   
+
+.cards {
+
+    width: 90%;
     margin: auto;
     margin-top: 1%;
     max-height: 120vh;
@@ -91,138 +184,163 @@ text-decoration: none;
     gap: 3%;
 
 }
-.card1{
- width: 30%;   
- margin-top: 5%;
- text-align: center ;
- max-height: 80vh;
+
+.card1 {
+    width: 30%;
+    margin-top: 5%;
+    text-align: center;
+    max-height: 80vh;
 }
-.card1 h3{
+
+.card1 h3 {
     color: #00ad6a;
     width: 70%;
     text-align: center;
-    margin: auto;  
+    margin: auto;
 }
-.card3{
-    width: 30%;   
+
+.card3 {
+    width: 30%;
     margin-top: 5%;
-    text-align: center ;
+    text-align: center;
     border: #eafaf1 1px solid;
     max-height: 90vh;
-   }
-   .card3 h3{
-       color: #00ad6a;
-       width: 70%;
-       text-align: center;
-       margin: auto;  
-   }
-.box{
+}
+
+.card3 h3 {
+    color: #00ad6a;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.box {
     background-color: #eafaf1;
     padding: 2%;
     margin-bottom: 5%;
-    
+
 }
-.box a{
-text-decoration: none;
-color: #080c16;    
+
+.box a {
+    text-decoration: none;
+    color: #080c16;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
- ul li{
- 
-   margin: 1rem;
+
+ul li {
+
+    margin: 1rem;
 }
-.cardmid h1{
+
+.cardmid h1 {
     color: #00ad6a;
     width: 50%;
     text-align: center;
     margin: auto;
 }
-.cardmid{
-    width: 30%;  
+
+.cardmid {
+    width: 30%;
     border: 1px solid #00ad6a;
     max-height: 110vh;
     text-align: center;
-    
+
 }
-.rec{
+
+.rec {
     background-color: #00ad6a;
     max-height: 10vh;
     text-align: center;
     color: #fcfcfc;
     border-radius: 5px;
 }
-.sub{
-   
+
+.sub {
+
     width: 60%;
-    margin: auto; 
-    margin-top: 5%; 
-  text-align: center;
-    justify-content: center; 
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
- .icon{
-   
-   width: 30%;
-   margin: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+.icon {
+
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icon img{
+
+.icon img {
     width: 40%;
 }
-.g{
+
+.g {
     color: #00ad6a;
     font-weight: bold;
 }
 
 
 /* Media Queries for smaller screens */
+
 @media (max-width: 768px) {
-    header {
-        margin-bottom: 2rem; /* Space below the header */
-    }
-    
-    .cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem; /* Space between cards */
+    body {
+        width: 100%;
     }
 
-    .card1, .card3, .cardmid {
+    header {
+        width: 100%;
+        margin: 5%;
+    }
+
+    .intro {
         width: 90%;
-        margin-bottom: 2rem; /* Space below each card */
+        margin: auto;
     }
 
     .info {
-        margin-top: 2rem; /* Space above the info section */
+        width: 90%;
     }
-    
+
+    .cards {
+        width: 95%;
+        min-height: max-content;
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .card1,
+    .card3,
+    .cardmid {
+        width: 90%;
+    }
+
     .sub {
-        margin-top: 2rem; /* Space above the sub section */
+        width: 100%;
+
+    }
+
+    .icon {
+        width: 90%;
     }
 }
 
-
 @media (max-width: 480px) {
-    header .menu {
+    .cards {
         flex-direction: column;
-        align-items: center;
+        gap: 1rem;
     }
-    
-    .btn, .cardbtn {
-        width: 100%;
-        text-align: center;
-        margin-top: 1rem;
-    }
-    
-    .rec {
-        padding: 1rem;
-    }
-    
-    .icon img {
-        width: 50%;
+
+    .card1,
+    .cardmid,
+    .card3 {
+        width: 90%;
+        margin-bottom: 1.5rem;
     }
 }

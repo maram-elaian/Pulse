@@ -15,17 +15,30 @@
 <body>
     <header>
         <div class="logo">
-           
-                <a href=""> <img src="https://pulseapp.com/img/pulse-logo.svg"></a>
-            </div>
-            <div class="menu">
-                <a href=""> Features</a>
-                <a href="">Customer Stories</a>
-                <a href="">Pricing</a>
-                <a href="">Blog</a>
-                <a href="" class="btn">sign in</a>
-            </div>
-     
+
+            <a href=""> <img src="https://pulseapp.com/img/pulse-logo.svg"></a>
+        </div>
+        <nav class="menu">
+            <button class="menu-button" id="menu-toggle">☰</button>
+
+            <ul class="sidebar">
+
+                
+                <li> <a href=""> Features</a></li>
+                <li> <a href="">Customer Stories</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li> <a href="" class="btn">sign in</a></li>
+            </ul>
+            <ul class="main-menu">
+                <li> <a href=""> Features</a></li>
+                <li> <a href="">Customer Stories</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li> <a href="" class="btn">sign in</a></li>
+            </ul>
+        </nav>
+      
     </header>
     <main>
         <!---------->
@@ -46,11 +59,15 @@
                 <h3>These are what we call the Pulse Basics. They’re what every customer gets.</h3>
                 <p>
                 <ul>
-                    <li> <i class="fa-solid fa-check"></i>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
-                    <li><i class="fa-solid fa-check"></i>Forecast growth with recurring income or expenses that scale automatically</li>
+                    <li> <i class="fa-solid fa-check"></i>Manage cash flow on a daily, weekly, monthly, or yearly basis
+                    </li>
+                    <li><i class="fa-solid fa-check"></i>Forecast growth with recurring income or expenses that scale
+                        automatically</li>
                     <li> <i class="fa-solid fa-check"></i>Works with any currency</li>
-                    <li> <i class="fa-solid fa-check"></i>See Money In and Money Out, categorize transactions, and run helpful reports</li>
-                    <li> <i class="fa-solid fa-check"></i>Toggle entries and accounts on and off to game out different scenarios</li>
+                    <li> <i class="fa-solid fa-check"></i>See Money In and Money Out, categorize transactions, and run
+                        helpful reports</li>
+                    <li> <i class="fa-solid fa-check"></i>Toggle entries and accounts on and off to game out different
+                        scenarios</li>
 
                 </ul>
                 Just need the Pulse Basics?
@@ -67,10 +84,13 @@
                     <p>You get Pulse Basics, plus:</p>
                     <ul>
                         <li> <i class="fa-solid fa-check"></i>Manage cash flow across multiple financial accounts</li>
-                        <li> <i class="fa-solid fa-check"></i> Invite your investors, book keeper, or management team to see reports or manage cash flow
+                        <li> <i class="fa-solid fa-check"></i> Invite your investors, book keeper, or management team to
+                            see reports or manage cash flow
                         </li>
-                        <li> <i class="fa-solid fa-check"></i>Integrate with QuickBooks Online for more accurate cash flow</li>
-                        <li> <i class="fa-solid fa-check"></i>Track your actual cash flow alongside your projected cash flow</li>
+                        <li> <i class="fa-solid fa-check"></i>Integrate with QuickBooks Online for more accurate cash
+                            flow</li>
+                        <li> <i class="fa-solid fa-check"></i>Track your actual cash flow alongside your projected cash
+                            flow</li>
 
                     </ul>
 
@@ -89,9 +109,12 @@
                     <p>Get it all, plus:</p>
                     <ul>
                         <li> <i class="fa-solid fa-check"></i>Manage cash flow across unlimited financial accounts</li>
-                        <li> <i class="fa-solid fa-check"></i>Convert to any currency for localized cash flow reporting and projections</li>
-                        <li> <i class="fa-solid fa-check"></i>Integrate with QuickBooks Online for more accurate cash flow</li>
-                        <li> <i class="fa-solid fa-check"></i>Attach invoices or contracts to your cash flow entries for accountability and auditing</li>
+                        <li> <i class="fa-solid fa-check"></i>Convert to any currency for localized cash flow reporting
+                            and projections</li>
+                        <li> <i class="fa-solid fa-check"></i>Integrate with QuickBooks Online for more accurate cash
+                            flow</li>
+                        <li> <i class="fa-solid fa-check"></i>Attach invoices or contracts to your cash flow entries for
+                            accountability and auditing</li>
 
                     </ul>
 
@@ -111,7 +134,8 @@
                 <img src="images/subvert-avatar@2x (1).png" alt="">
             </div>
             <div>
-                <p>“Pulse is worth every penny because it empowers business owners with critical financial insight and knowledge.”</p>
+                <p>“Pulse is worth every penny because it empowers business owners with critical financial insight and
+                    knowledge.”</p>
                 <p class="g">Subvert Marketing, Inc.</p>
             </div>
 
@@ -119,6 +143,18 @@
         </div>
 
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('menu-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            
+            // إضافة الحدث لتبديل حالة القائمة الجانبية عند الضغط على الزر
+            menuButton.addEventListener('click', () => {
+                sidebar.classList.toggle('active'); // إظهار/إخفاء القائمة
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
