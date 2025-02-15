@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Noto+Sans+SC:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
- 
+
     font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #fcfcfc;
+
+    background-color: #eafaf1;
     font-weight: 500;
 }
 
@@ -25,12 +27,11 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 1.5rem auto;
-    padding:  1.5rem;
-
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
+
 
 
 }
@@ -75,29 +76,25 @@ nav ul {
 
 
 /* القائمة الجانبية (sidebar) */
-/* إعدادات أساسية */
-body {
-    font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #fcfcfc;
-    font-weight: 500;
-}
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2%;
+    background-color: #eafaf1;
 }
 
 
 
 /* إعداد القائمة الجانبية */
 .sidebar {
-    display: none; /* مخفية بشكل افتراضي */
-    
+    display: none;
+    /* مخفية بشكل افتراضي */
     top: 0;
     left: 0;
-  width:80%;
+    width: 80%;
     height: 100vh;
     background-color: #eafaf1;
     z-index: 1000;
@@ -120,6 +117,7 @@ header {
     background-color: #00ad6a;
     color: #fff;
 }
+
 .sidebar.active {
     display: flex;
 }
@@ -127,7 +125,8 @@ header {
 
 /* الزر ☰ */
 .menu-button {
-    display: none; /* إخفاء الزر افتراضيًا */
+    display: none;
+    /* إخفاء الزر افتراضيًا */
     font-size: 2rem;
     background: none;
     border: none;
@@ -135,29 +134,11 @@ header {
     cursor: pointer;
 }
 
-/* إظهار الزر فقط على الشاشات الصغيرة */
-@media (max-width: 800px) {
-   
-    .menu-button {
-        display: block; /* إظهار الزر على الشاشات الصغيرة */
-    }
-
-    /* إخفاء القائمة الرئيسية على الشاشات الصغيرة */
-    .main-menu {
-        display: none;
-    }
-}
-
-
-
-
-
-
 .btn {
     color: #00ad6a;
     background-color: none;
     border: #00ad6a solid 2px;
-    padding: .25rem 1rem ;
+    padding: .25rem 1rem;
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -176,36 +157,39 @@ header {
     text-align: center;
     margin-top: 2rem;
     padding-bottom: 2.5rem;
-    margin-bottom:2.5rem
-    
+    margin-bottom: 2.5rem;
+
 }
 
 .info {
     width: 50%;
     margin: auto;
 }
-.info h1{
+
+.info h1 {
     font-size: 3.75rem;
     line-height: 1;
     margin-bottom: 1rem;
 }
-.info p{
+
+.info p {
     width: 80%;
     font-size: 1.125rem;
     margin: 0 auto;
 }
+
 /*card */
 .cards {
-    width: 80%;
+    width: 95%;
     margin: auto;
     margin-top: 1%;
-    max-height: 120vh;
+    max-height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 3%;
-   background-color: #eafaf1;
+    gap: 5%;
+    background-color: #eafaf1;
 }
 
 .card1 {
@@ -215,7 +199,8 @@ header {
     max-height: 80vh;
     background-color: #eafaf1;
 }
-.card1 h3{
+
+.card1 h3 {
     display: block;
     font-size: 1.25rem;
     line-height: 1.15rem;
@@ -225,15 +210,18 @@ header {
     color: #00ad6a;
     padding-bottom: .8rem;
 }
-.card1 ul li{
+
+.card1 ul li {
     list-style-type: disc;
     font-weight: 400;
 }
-.card1 p{
+
+.card1 p {
     width: 90%;
     font-weight: 400;
 }
-.card1 p a{
+
+.card1 p a {
     font-weight: 500;
     color: #080c16;
 }
@@ -242,12 +230,12 @@ header {
 
 .card3 {
     width: 35%;
-   padding-top: 3rem;
-   position: relative;
-   right: 2.2rem;
+    padding-top: 3rem;
+    position: relative;
+    right: 2.2rem;
     text-align: center;
     border: #eafaf1 1px solid;
-    max-height: 90vh;
+    max-height: max-content;
     background-color: #ffffff;
 }
 
@@ -255,13 +243,13 @@ header {
     color: #00ad6a;
     width: 80%;
     text-align: center;
-    margin:4rem auto 0;
+    margin: 4rem auto 0;
     font-weight: 400;
     font-size: 2.25rem;
 
 }
 
-.card3 span{
+.card3 span {
     display: block;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -270,7 +258,7 @@ header {
     text-transform: lowercase;
 }
 
-.card3 p{
+.card3 p {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: .75rem;
@@ -311,7 +299,7 @@ ul li {
 .cardmid {
     width: 35%;
     border: 1px solid #00ad6a;
-    max-height: 110vh;
+    max-height: max-content;
     text-align: center;
     border-radius: 8px 8px 0 0;
     background-color: #fff;
@@ -325,16 +313,18 @@ ul li {
     border-radius: 8px 8px 0 0;
 }
 
-.cardhead{
+.cardhead {
     padding-top: 3rem;
 
 }
-.cardhead h1{
+
+.cardhead h1 {
     display: block;
     font-size: 3rem;
     text-align: center;
 }
-.cardhead p span{
+
+.cardhead p span {
     display: block;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -355,22 +345,25 @@ ul li {
     font-weight: 700;
     transition: all .05sease-in-out;
 }
-.cardbtn:hover{
+
+.cardbtn:hover {
     transform: scale(1);
 }
-.cardhead p{
+
+.cardhead p {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: .75rem;
 }
 
 .cardcontent ul li {
-   text-align: left;
-   padding-top: .5rem;
-   padding-bottom: .5rem;
-   font-weight: 400;
-  
+    text-align: left;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 400;
+
 }
+
 .sub {
 
     width: 65%;
@@ -385,7 +378,7 @@ ul li {
 }
 
 .icon {
-    
+
     width: 30%;
     margin: 0 auto;
     padding: 1rem;
@@ -403,6 +396,7 @@ ul li {
     padding: 1rem 0;
     font-weight: 400;
 }
+
 .g {
     padding-top: 1rem;
     color: #00ad6a;
@@ -416,15 +410,17 @@ ul li {
     font-weight: 700;
     color: black;
     font-size: 2rem;
-    padding:0 1.5rem 1.5rem;
+    padding: 0 1.5rem 1.5rem;
+
 }
 
 .section {
     width: 100%;
     max-width: 1200px;
     height: auto;
-    margin: 0 auto 5rem;
-    padding: 0 ;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fcfcfc;
 }
 
 .section .contentf {
@@ -433,7 +429,7 @@ ul li {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding:0 .5rem;
+    padding: 0 .5rem;
     line-height: 20px;
     gap: 0.1rem;
     margin: 0;
@@ -441,12 +437,13 @@ ul li {
 
 .section .contentf .content-faq {
     width: 40%;
-    padding:0 16px;
+    padding: 0 16px;
     flex-grow: 1;
     flex-shrink: 0;
 
 }
-.section .contentf .content-faq h4{
+
+.section .contentf .content-faq h4 {
     font-size: 1.25rem;
     line-height: 1.15;
     font-weight: 700;
@@ -456,18 +453,19 @@ ul li {
 
 .section .contentf .content-faq p {
     margin-top: 0;
-    color:  #696969;
+    color: #696969;
     font-size: 1.125rem;
-    font-weight:400;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1.25rem;
 
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     .section .content .content-faq {
         width: 60%;
-        padding:0 12px;
-    
+        padding: 0 12px;
+
     }
 }
 
@@ -477,94 +475,112 @@ footer {
     color: white;
     position: relative;
     width: 100%;
-    height:auto ;
+    height: auto;
     padding-top: 80px;
     box-sizing: border-box;
-  }
-  .footer-container {
+ 
+}
+footer div{
+    border: white 1px solid;
+}
+
+.footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   flex-wrap: wrap;
-   width: 95%;
-    padding:1rem 8rem 0 ;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 1rem 8rem 0;
     margin: 0 auto 5rem;
-  }
-  .left-side {
+}
+
+.left-side {
     flex: 1;
-    padding-left: 20px; 
-    
-  }
-  .left-side .logo a img{
+    padding-left: 20px;
+
+}
+
+.left-side .logo a img {
     margin-bottom: 3rem;
     width: 10rem;
-  }
-  .right-side {
+}
+
+.right-side {
     flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-right: 20px;
-  }
- .footer-btn {
+}
+
+.footer-btn {
     display: inline-block;
-  padding: 15px 25px;
-  width: 20rem;
-  background: linear-gradient(to right, #00ad6a, #36c88a);
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  margin: 10px 0;
- }
- .footer-btn:hover{
+    padding: 15px 25px;
+    width: 20rem;
+    background: linear-gradient(to right, #00ad6a, #36c88a);
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+    
+}
+
+.footer-btn:hover {
     box-shadow: -5px 5px #818387;
     -webkit-transform: translate3d(5px, -5px, 0);
     transform: translate3d(5px, -5px, 0)
- }
- .link-content{
-    width: 33.33333%;
- }
+}
 
- .link-content h3 {
+.link-content {
+    width: 33.33333%;
+}
+
+.link-content h3 {
     font-size: 1.125rem;
     font-weight: 700;
-    color:#eafaf1;
+    color: #eafaf1;
     margin-bottom: 1rem;
     padding-left: 1rem;
-  }
-  .link-content ul {
+}
+
+.link-content ul {
     list-style: none;
     padding: 0;
-  }
-  .link-content ul li a {
+}
+
+.link-content ul li a {
     text-decoration: none;
     color: #00ff7f;
     transition: color 0.3s;
     margin-bottom: 1rem;
     font-size: 1.125rem;
     font-weight: 300;
-  }
-  .link-content ul li a:hover {
-    color:#eafaf1;
-  }
-  .content-footer{
+}
+
+.link-content ul li a:hover {
+    color: #eafaf1;
+}
+
+.content-footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
-  }
-  .footer-bottom {
+}
+
+.footer-bottom {
     padding: 20px 0;
     font-size: 12px;
     background-color: #111;
     color: #ccc;
-  }
+}
 
-  .footer-bottom a{
+.footer-bottom a {
     color: #ccc;
-  }
+}
+
 /* Media Queries for smaller screens */
 
 @media (max-width: 768px) {
@@ -607,10 +623,35 @@ footer {
     .icon {
         width: 90%;
     }
+
     .section .contentf .content-faq {
         width: 70%;
-        padding:0 12px;
-    
+        padding: 0 12px;
+
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .left-side{
+        width: 100%;
+        text-align: center;
+    }
+    .right-side{
+        width: 90%;
+    }
+     div .links {
+        width: 90%;
+        display: flex;
+        gap: 5%;
     }
 }
 
@@ -626,6 +667,40 @@ footer {
         width: 80%;
         margin-bottom: 1.5rem;
     }
-    
+   
+        footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .footer-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .left-side , .right-side {
+            width: 100%;
+            text-align: center;
+        }
+        .right-side .link-content {
+            width: 90%;
+            display: flex;
+            gap: 10%;
+            flex-direction: column;
+        }
 }
 
+@media (max-width: 800px) {
+
+    .menu-button {
+        display: block;
+        /* إظهار الزر على الشاشات الصغيرة */
+    }
+
+    /* إخفاء القائمة الرئيسية على الشاشات الصغيرة */
+    .main-menu {
+        display: none;
+    }
+}
