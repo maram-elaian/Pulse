@@ -601,16 +601,20 @@ footer {
     }
 
     .cards {
-        width: 85%;
+        width: 100%;
         min-height: max-content;
         flex-direction: column;
+        justify-content: center;
         margin: 1rem;
     }
 
     .card1,
     .card3,
     .cardmid {
-        width: 80%;
+        width: 90%;
+    }
+    .card3{
+        right: 0%;
     }
 
     .sub {
@@ -654,6 +658,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .intro{
+        margin-bottom: 3rem;
+    }
     .cards {
         flex-direction: column;
         gap: 1rem;
@@ -662,7 +669,7 @@ footer {
     .card1,
     .cardmid,
     .card3 {
-        width: 80%;
+        width: 90%;
         margin-bottom: 1.5rem;
     }
    
@@ -671,22 +678,54 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            margin: auto;
         }
         .footer-container {
+          
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-direction: column;
+            margin: auto;
         }
         .left-side , .right-side {
-            width: 100%;
+            width: 90%;
             text-align: center;
+            padding: 0;
+            
+        }
+        .left-side{
+           
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        .left-side .logo{
+            width: 90%;
         }
         .right-side .link-content {
-            width: 90%;
+            width: 100%;
             display: flex;
             gap: 10%;
             flex-direction: column;
+        }
+        .footer-btn{
+            width: auto;
+        }
+        .menu-button {
+            display: block;
+    margin-left: 70%;
+           
+            /* إظهار الزر على الشاشات الصغيرة */
+        }
+    
+        /* إخفاء القائمة الرئيسية على الشاشات الصغيرة */
+        .main-menu {
+            display: none;
         }
 }
 
@@ -694,6 +733,8 @@ footer {
 
     .menu-button {
         display: block;
+        margin-left: 70%;
+        float: right;
         /* إظهار الزر على الشاشات الصغيرة */
     }
 
