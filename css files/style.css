@@ -4,19 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-
+overflow-x: hidden;
     font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-
     background-color: #eafaf1;
     font-weight: 500;
 }
-
-
-/*header*/
 
 i {
     color: #00ad6a;
@@ -31,15 +26,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
-
 }
 
 header .logo {
     width: 20%;
-
-
 }
 
 header .menu {
@@ -56,8 +46,6 @@ header .menu {
     align-items: center;
     color: #00ad6a;
     text-decoration: none;
-
-
 }
 
 .menu a:hover {
@@ -72,12 +60,6 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
 }
-
-
-
-/* القائمة الجانبية (sidebar) */
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -86,22 +68,22 @@ header {
     background-color: #eafaf1;
 }
 
-
-
-/* إعداد القائمة الجانبية */
 .sidebar {
     display: none;
     /* مخفية بشكل افتراضي */
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%; /* يمكنك تعديل العرض حسب الحاجة */
+    height: 80%; /* يمكنك تعديل الارتفاع حسب الحاجة */
     background-color: #eafaf1;
     z-index: 1000;
     flex-direction: column;
+    transform: translate(-50%, -50%); /* لضبط الموقع في المنتصف */
+    border-radius: 10px; /* إضافة حواف دائرية إذا كنت ترغب */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل للقائمة */
+   
 }
-
-
 
 .sidebar li {
     padding: 1rem;
@@ -114,8 +96,9 @@ header {
 }
 
 .sidebar a:hover {
-    background-color: #00ad6a;
-    color: #fff;
+    
+   color: #080c16;
+    transition: 0.4s;
 }
 
 .sidebar.active {
@@ -584,6 +567,8 @@ footer {
 @media (max-width: 768px) {
     body {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     header {
@@ -605,7 +590,7 @@ footer {
         min-height: max-content;
         flex-direction: column;
         justify-content: center;
-        margin: 1rem;
+        margin-bottom: 1rem;
     }
 
     .card1,
@@ -628,7 +613,7 @@ footer {
 
     .section .contentf .content-faq {
         width: 70%;
-        padding: 0 12px;
+      padding: 0 12px;
 
     }
     footer{
@@ -658,6 +643,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .intro{
         margin-bottom: 3rem;
     }
