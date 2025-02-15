@@ -480,9 +480,7 @@ footer {
     box-sizing: border-box;
  
 }
-footer div{
-    border: white 1px solid;
-}
+
 
 .footer-container {
     display: flex;
